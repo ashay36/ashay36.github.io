@@ -1,0 +1,17 @@
+# Top Menu
+topmenu:
+
+- title: Home
+  url: ""
+
+- title: About
+  url: "about/"
+
+# Footer Menu
+footermenu:
+
+- title: Home
+  url: ""
+
+- title: Privacy Policy
+  url: "privacy-policy/"
