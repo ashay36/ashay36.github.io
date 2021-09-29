@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="/assets/images/favicon.ico">
+
+<title>Emergency Vehicle Classification | Ashay Ajbani</title>
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Emergency Vehicle Classification | Ashay Ajbani</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Emergency Vehicle Classification" />
+<meta name="author" content="Ashay" />
+<meta property="og:locale" content="en_us" />
+<meta name="description" content="``` Team Name : The Alphas" />
+<meta property="og:description" content="``` Team Name : The Alphas" />
+<link rel="canonical" href="http://localhost:4000/vehicle-classification/" />
+<meta property="og:url" content="http://localhost:4000/vehicle-classification/" />
+<meta property="og:site_name" content="Ashay Ajbani" />
+<meta property="og:image" content="http://localhost:4000/assets/images/vehicle.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-08T00:00:00+05:30" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4000/assets/images/vehicle.jpg" />
+<meta property="twitter:title" content="Emergency Vehicle Classification" />
+<script type="application/ld+json">
+{"image":"http://localhost:4000/assets/images/vehicle.jpg","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ashay"},"author":{"@type":"Person","name":"Ashay"},"headline":"Emergency Vehicle Classification","dateModified":"2020-08-08T00:00:00+05:30","@type":"BlogPosting","datePublished":"2020-08-08T00:00:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/vehicle-classification/"},"description":"``` Team Name : The Alphas","url":"http://localhost:4000/vehicle-classification/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link href="/assets/css/theme.css" rel="stylesheet">
+
+<!-- custom CSS - Remove this if you don't use it or choose to customize the stylesheet with sass-->
+<link href="/assets/css/custom.css" rel="stylesheet">
+<!-- custom CSS end-->
+    
+
+   
+</head>   
+    
+
+<body class="layout-post">
+
+    
+<!-- Menu Navigation
+================================================== -->
+<div class="navigation-wrap start-header start-style">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+              <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+            </svg>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto font-weight-bold d-flex align-items-center">
+              
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/" alt="Home">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/about/" alt="About">About</a>
+              </li>
+              
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </div>  
+
+    
+<!-- Container
+================================================== -->    
+<main class="container">   
+      <!-- Begin Article
+================================================== -->
+
+	<div class="row">
+		
+
+		<!-- Post -->        
+        
+        
+		<div class="col-sm-15">
+            <!-- Post Featured Image -->
+			<img class="featured-image img-fluid rounded" src="/assets/images/vehicle.jpg" alt="Emergency Vehicle Classification">
+			<!-- End Featured Image -->
+			<div class="mainheading">             
+                
+                <!-- Post Categories -->
+                <div class="after-post-tags">
+                    <ul class="tags">
+                        
+                        
+                        <li>
+                         <a href="/categories#jekyll">Jekyll</a>
+                        </li>
+                        
+                        <li>
+                         <a href="/categories#tutorial">tutorial</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- End Categories -->
+                
+                <!-- Post Title -->
+				<h1 class="posttitle">Emergency Vehicle Classification</h1> 
+                
+			</div>
+
+			
+
+			<!-- Post Content -->
+			<div class="article-post serif-font">
+				<pre><code>Team Name : The Alphas
+
+Authors : Ashay Ajbani and Pritam Rao
+
+Competition Type : Image Classification
+
+Solution Type : Model Ensembling
+
+Number of Classes : 2
+
+Pretrained Models Used : VGG16 and NASnet Large
+
+Private Leaderboard Rank : 36/10000
+</code></pre>
+
+<p>The competition was hosted on <code>https://www.analyticsvidhya.com/</code>.
+The task was to classify vehicles into emergency and non-emergency categories.</p>
+
+<h3 id="our-approach">Our Approach</h3>
+<p>We ensembled 5 models to make final predictions.</p>
+
+<p><strong>Models</strong> :</p>
+<ul>
+<li> Model 1 : Fine Tuning VGG16 </li>
+<li> Model 2 : Fine Tuning VGG16 with l2 regularization </li>
+<li> Model 3 : k-fold validation </li>
+<li> Model 4 : Fine Tuning NASnet </li>
+<li> Model 5 : Fine Tuning NASnet with l2 regularization</li>
+</ul>
+
+<p>The predictions taken by ensembling above 5 models
+resulted in an accuracy greater than any of the individual models.</p>
+
+<p>Techniques used to reduce overfitting :</p>
+<ul>
+  <li> Data Augmentation </li>
+  <li> BatchNormalization </li>
+  <li> Dropout </li>
+  <li> l2 Regularization </li>
+</ul>
+
+<p><strong>Accuracy</strong> :</p>
+<ul>
+<li> Model 1 : 0.9498 </li>
+<li> Model 2 : 0.9546 </li>
+<li> Model 3 : 0.9444 </li>
+<li> Model 4 : 0.9548 </li>
+<li> Model 5 : 0.9514 </li>
+<li> After Ensembling (final) : 0.9688 </li>
+</ul>
+
+<p>You can checkout Pritam Rao’s github profile at <code>https://github.com/pritamrao746/</code></p>
+
+                <div class="clearfix"></div>
+			</div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2020-08-08">08 Aug 2020</time></span>           
+                
+                </small>
+            </p>
+            
+			
+            
+            <!-- Prev/Next -->
+            <div class="row PageNavigation mt-4 prevnextlinks d-flex justify-content-between">
+              
+                <div class="col-md-6 rightborder pl-0">
+                    <a class="thepostlink" href="http://localhost:4000/face-applications/">&laquo; Face Applications</a>
+                </div>
+              
+              
+                <div class="col-md-6 text-right pr-0">
+                    <a class="thepostlink" href="http://localhost:4000/wheat-detection/">Wheat Detection &raquo;</a>
+                </div>
+              
+            </div>
+            <!-- End Prev/Next -->
+            
+            
+             <!-- Author Box -->
+                				
+				<div class="row post-top-meta">
+					<div class="col-md-2">
+						<img class="author-thumb" src="/assets/images/sal.png" alt="Ashay">
+					</div>
+					<div class="col-md-10">
+						<a target="_blank" class="link-dark" href="https://www.wowthemes.net/category/jekyll-themes/">Ashay</a>						
+					</div>
+				</div>				
+                
+            
+            
+
+		</div>
+		<!-- End Post -->       
+        
+        
+
+	</div>
+
+<!-- End Article
+================================================== -->  
+</main>
+
+<!-- Footer
+================================================== -->    
+<footer class="footer container text-center">  
+
+  <!-- CREDITS BEGIN.-->
+  <!-- If you want to support my work, please donate to remove the credits. This helps me keep it up and running: https://www.wowthemes.net/donate/ -->
+  <div class="credits mx-auto text-center mb-3">
+    <a class="hover-opacity font-weight-bold" href="https://bootstrapstarter.com/template-affiliates-bootstrap-jekyll/">
+      <img src="/assets/images/credits.png" alt="powered by WowThemes">
+    </a>
+  </div>
+  <!-- CREDITS END -->
+
+  <ul class="p-0 mb-1 small">
+    
+    <li>
+      <a href="/" alt="Home">Home</a>
+    </li>
+    
+    <li>
+      <a href="/privacy-policy/" alt="Privacy Policy">Privacy Policy</a>
+    </li>
+    
+    </ul>
+    <div class="copyright small">
+       Copyright © Ashay Ajbani. All rights reserved.
+    </div>
+</footer>
+
+<!-- JavaScript
+================================================== -->    
+<script src="/assets/js/jquery.min.js"></script>   
+<script src="/assets/js/bootstrap.min.js"></script>   
+<script src="/assets/js/theme.js"></script>    
+    
+</body>
+    
+</html>
