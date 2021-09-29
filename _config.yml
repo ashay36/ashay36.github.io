@@ -1,0 +1,40 @@
+title: "Ashay Ajbani"
+email: leo.ashay.60214@gmail.com
+timezone:
+baseurl: ""
+permalink: "/:title/"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+author: Sal
+paginate: 30
+disqus: 'demowebsite'
+locale: en_us
+lang: en_us
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
+markdown: kramdown
+kramdown:
+  syntax_highlighter_opts:
+    disable: true
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+
+# Authors
+authors:
+  Ashay:
+    name: Ashay
+    display_name: Ashay
+    avatar: 'assets/images/sal.png'
+    email: leo.ashay.60214@gmail.com
+    web: https://www.wowthemes.net/category/jekyll-themes/
+
+# Plugins
+plugins: 
+- jekyll-paginate
+- jekyll-sitemap
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-archives
