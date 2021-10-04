@@ -13,8 +13,8 @@
 <meta property="og:title" content="Wheat Detection" />
 <meta name="author" content="Ashay" />
 <meta property="og:locale" content="en_us" />
-<meta name="description" content="``` Team Name : The Alphas" />
-<meta property="og:description" content="``` Team Name : The Alphas" />
+<meta name="description" content="The competition was hosted on Kaggle. The task was to detect and localize wheat heads in images." />
+<meta property="og:description" content="The competition was hosted on Kaggle. The task was to detect and localize wheat heads in images." />
 <link rel="canonical" href="http://localhost:4000/wheat-detection/" />
 <meta property="og:url" content="http://localhost:4000/wheat-detection/" />
 <meta property="og:site_name" content="Ashay Ajbani" />
@@ -25,7 +25,7 @@
 <meta property="twitter:image" content="http://localhost:4000/assets/images/wheat.jpg" />
 <meta property="twitter:title" content="Wheat Detection" />
 <script type="application/ld+json">
-{"image":"http://localhost:4000/assets/images/wheat.jpg","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ashay"},"author":{"@type":"Person","name":"Ashay"},"headline":"Wheat Detection","dateModified":"2020-08-23T00:00:00+05:30","@type":"BlogPosting","datePublished":"2020-08-23T00:00:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wheat-detection/"},"description":"``` Team Name : The Alphas","url":"http://localhost:4000/wheat-detection/","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ashay"},"author":{"@type":"Person","name":"Ashay"},"@type":"BlogPosting","image":"http://localhost:4000/assets/images/wheat.jpg","headline":"Wheat Detection","dateModified":"2020-08-23T00:00:00+05:30","datePublished":"2020-08-23T00:00:00+05:30","description":"The competition was hosted on Kaggle. The task was to detect and localize wheat heads in images.","url":"http://localhost:4000/wheat-detection/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/wheat-detection/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -66,6 +66,18 @@
                 <a class="nav-link px-3 " href="/about/" alt="About">About</a>
               </li>
               
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/projects/" alt="Projects">Projects</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/competitions/" alt="Competitions">Competitions</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/resume/" alt="Resume">Resume</a>
+              </li>
+              
             </ul>
           </div>
 
@@ -98,11 +110,15 @@
                         
                         
                         <li>
-                         <a href="/categories#jekyll">Jekyll</a>
+                         <a href="/categories#competitions">Competitions</a>
                         </li>
                         
                         <li>
-                         <a href="/categories#tutorial">tutorial</a>
+                         <a href="/categories#deep-learning">Deep Learning</a>
+                        </li>
+                        
+                        <li>
+                         <a href="/categories#object-detection">Object Detection</a>
                         </li>
                         
                     </ul>
@@ -118,27 +134,29 @@
 
 			<!-- Post Content -->
 			<div class="article-post serif-font">
-				<pre><code>Team Name : The Alphas
+				<p>The competition was hosted on Kaggle.
+The task was to detect and localize wheat heads in images.</p>
+
+<pre><code>Team Name : The Alphas
 
 Authors : Ashay Ajbani and Pritam Rao
 
 Competition Type : Object Detection
+
+Framework : PyTorch
 
 Solution Type : Transfer Learning
 
 Number of Classes : 1
 
 Pretrained Models Used : 
-1) DETR (Submission 1)
+1) Detection Transformer (Submission 1)
 2) Efficient Detector (Submission 2)
 
-Public Leaderborad Rank : 481/2270
+Public Leaderboard Rank : 481/2270
 
 Private Leaderboard Rank : 354/2270
 </code></pre>
-
-<p>The competition was hosted on <code>https://www.kaggle.com/c/global-wheat-detection</code>.
-The task was to detect wheat heads in images and draw a bounding box around it.</p>
 
 <h3 id="our-approach">Our Approach</h3>
 
@@ -146,6 +164,8 @@ The task was to detect wheat heads in images and draw a bounding box around it.<
 
 <p>For our first submission, we fine tuned pretrained <em>Efficient Detector</em> model for our problem.
 It gave us a score of 0.7331 on the public leaderboard.</p>
+
+<p>Click <a href="https://github.com/ashay36/Machine-Learning-Competitions-Notebooks/tree/master/Kaggle%20-%20Global%20Wheat%20Detection/Efficient%20Detector">here</a> to access the code</p>
 
 <p>The file <em>wheat_detection_efficientdet.ipynb</em> includes training as well as inference. We have used Test Time 
 Augmentation and Weighted Boxes Fusion for making more accurate predictions.</p>
@@ -155,14 +175,15 @@ Augmentation and Weighted Boxes Fusion for making more accurate predictions.</p>
 <p>For our second submission, we fine tuned pretrained <em>DETR</em> model for our problem. It gave us a 
 score of 0.5758 on the public leaderboard.</p>
 
+<p>Click <a href="https://github.com/ashay36/Machine-Learning-Competitions-Notebooks/tree/master/Kaggle%20-%20Global%20Wheat%20Detection/DEtection%20TRansformer%20(DETR)">here</a> to access the code</p>
+
 <p>We have uploaded the following DETR notebooks :</p>
 
-<p>1) <em>wheat_detection_detr_training.ipynb</em> : Includes processing the dataset and training on detr.
- 2) <em>wheat_detection_detr_inference.ipynb</em> : Making predictions on the test images using the trained model.</p>
+<p>1) <em>wheat_detection_detr_training.ipynb</em> : Includes processing the dataset and training on DETR.</p>
 
-<p>We have documented the notebook so that you can easily use for your own applications.</p>
+<p>2) <em>wheat_detection_detr_inference.ipynb</em> : Making predictions on the test images using the trained model.</p>
 
-<p>You can checkout Pritam Rao’s github profile at <code>https://github.com/pritamrao746/</code></p>
+<p>We have documented the notebooks so that you can easily reproduce the results.</p>
 
                 <div class="clearfix"></div>
 			</div>
@@ -191,21 +212,6 @@ score of 0.5758 on the public leaderboard.</p>
               
             </div>
             <!-- End Prev/Next -->
-            
-            
-             <!-- Author Box -->
-                				
-				<div class="row post-top-meta">
-					<div class="col-md-2">
-						<img class="author-thumb" src="/assets/images/sal.png" alt="Ashay">
-					</div>
-					<div class="col-md-10">
-						<a target="_blank" class="link-dark" href="https://www.wowthemes.net/category/jekyll-themes/">Ashay</a>						
-					</div>
-				</div>				
-                
-            
-            
 
 		</div>
 		<!-- End Post -->       

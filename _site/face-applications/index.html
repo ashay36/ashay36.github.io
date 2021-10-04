@@ -13,8 +13,8 @@
 <meta property="og:title" content="Face Applications" />
 <meta name="author" content="Ashay" />
 <meta property="og:locale" content="en_us" />
-<meta name="description" content="This repository contains all face related applications using opencv and deep learning libraries" />
-<meta property="og:description" content="This repository contains all face related applications using opencv and deep learning libraries" />
+<meta name="description" content="This project contains face related applications using opencv and deep learning libraries." />
+<meta property="og:description" content="This project contains face related applications using opencv and deep learning libraries." />
 <link rel="canonical" href="http://localhost:4000/face-applications/" />
 <meta property="og:url" content="http://localhost:4000/face-applications/" />
 <meta property="og:site_name" content="Ashay Ajbani" />
@@ -25,7 +25,7 @@
 <meta property="twitter:image" content="http://localhost:4000/assets/images/face_applications.jpg" />
 <meta property="twitter:title" content="Face Applications" />
 <script type="application/ld+json">
-{"image":"http://localhost:4000/assets/images/face_applications.jpg","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ashay"},"author":{"@type":"Person","name":"Ashay"},"headline":"Face Applications","dateModified":"2020-06-17T00:00:00+05:30","@type":"BlogPosting","datePublished":"2020-06-17T00:00:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/face-applications/"},"description":"This repository contains all face related applications using opencv and deep learning libraries","url":"http://localhost:4000/face-applications/","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ashay"},"author":{"@type":"Person","name":"Ashay"},"@type":"BlogPosting","image":"http://localhost:4000/assets/images/face_applications.jpg","headline":"Face Applications","dateModified":"2020-06-17T00:00:00+05:30","datePublished":"2020-06-17T00:00:00+05:30","description":"This project contains face related applications using opencv and deep learning libraries.","url":"http://localhost:4000/face-applications/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/face-applications/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -66,6 +66,18 @@
                 <a class="nav-link px-3 " href="/about/" alt="About">About</a>
               </li>
               
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/projects/" alt="Projects">Projects</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/competitions/" alt="Competitions">Competitions</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/resume/" alt="Resume">Resume</a>
+              </li>
+              
             </ul>
           </div>
 
@@ -98,11 +110,15 @@
                         
                         
                         <li>
-                         <a href="/categories#jekyll">Jekyll</a>
+                         <a href="/categories#computer-vision">Computer Vision</a>
                         </li>
                         
                         <li>
-                         <a href="/categories#tutorial">tutorial</a>
+                         <a href="/categories#deep-learning">Deep Learning</a>
+                        </li>
+                        
+                        <li>
+                         <a href="/categories#projects">Projects</a>
                         </li>
                         
                     </ul>
@@ -118,7 +134,37 @@
 
 			<!-- Post Content -->
 			<div class="article-post serif-font">
-				<p>This repository contains all face related applications using opencv and deep learning libraries</p>
+				<p>This project contains face related applications using opencv and deep learning libraries.</p>
+
+<h4 id="face-recognition-using-lbph-face-recognizer">Face Recognition using LBPH Face Recognizer</h4>
+
+<p>The pipeline involves the following steps :-</p>
+<ul>
+    <li> Detecting faces using OpenCV's Haar Cascades </li>
+    <li> Training a Face Recognizer using OpenCV's build-in LBPH Face Recognizer </li>
+    <li> Saving the model and predicting on custom images </li>
+</ul>
+
+<p>Click <a href="https://github.com/ashay36/Face-Applications/tree/master/Face%20Recognition%20using%20LBPHFaceRecognizer">here</a> to access the code.</p>
+
+<h4 id="face-recognition-using-one-shot-learning">Face Recognition using One Shot Learning</h4>
+
+<p>On a contrary to the above Face Recognition method which involves training on several images, One Shot learning only requires a pre-trained to directly get the embeddings from the detected face. The code involves the following steps :-</p>
+<ul>
+    <li> Detecting faces using MTCNN Face Detector </li>
+    <li> Getting feature embeddings of each class from pre-trained VGGFace model and storing them in a database </li>
+    <li> Get the feature embeddings of the test image and calculate the distance between this test image and each embedding in the database </li>
+    <li> If the distance is less than a threshold for a particular pair, then the identity has been found </li>
+</ul>
+
+<p>Click <a href="https://github.com/ashay36/Face-Applications/tree/master/Face%20Recognition%20-%20One%20Shot%20Learning">here</a> to access the code</p>
+
+<h4 id="face-alignment">Face Alignment</h4>
+
+<p>It is one of the most important steps in modern day Face Recognition pipeline to increase the accuracy of recognition.</p>
+
+<p>Click <a href="https://github.com/ashay36/Face-Applications/tree/master/Face%20Alignment">here</a> to access the code.</p>
+
 
                 <div class="clearfix"></div>
 			</div>
@@ -147,21 +193,6 @@
               
             </div>
             <!-- End Prev/Next -->
-            
-            
-             <!-- Author Box -->
-                				
-				<div class="row post-top-meta">
-					<div class="col-md-2">
-						<img class="author-thumb" src="/assets/images/sal.png" alt="Ashay">
-					</div>
-					<div class="col-md-10">
-						<a target="_blank" class="link-dark" href="https://www.wowthemes.net/category/jekyll-themes/">Ashay</a>						
-					</div>
-				</div>				
-                
-            
-            
 
 		</div>
 		<!-- End Post -->       

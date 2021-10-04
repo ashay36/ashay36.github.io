@@ -13,8 +13,8 @@
 <meta property="og:title" content="COVID-19 Face Mask Detection" />
 <meta name="author" content="Ashay" />
 <meta property="og:locale" content="en_us" />
-<meta name="description" content="COVID-19-Face-Mask-Detection- A deep learning based model that detects whether a person has a face mask on or not with nearly 100% accuracy." />
-<meta property="og:description" content="COVID-19-Face-Mask-Detection- A deep learning based model that detects whether a person has a face mask on or not with nearly 100% accuracy." />
+<meta name="description" content="A deep learning based model that detects whether a person is wearing a face mask or not with nearly 100% accuracy." />
+<meta property="og:description" content="A deep learning based model that detects whether a person is wearing a face mask or not with nearly 100% accuracy." />
 <link rel="canonical" href="http://localhost:4000/face-mask-detection/" />
 <meta property="og:url" content="http://localhost:4000/face-mask-detection/" />
 <meta property="og:site_name" content="Ashay Ajbani" />
@@ -25,7 +25,7 @@
 <meta property="twitter:image" content="http://localhost:4000/assets/images/face_mask.jpg" />
 <meta property="twitter:title" content="COVID-19 Face Mask Detection" />
 <script type="application/ld+json">
-{"image":"http://localhost:4000/assets/images/face_mask.jpg","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ashay"},"author":{"@type":"Person","name":"Ashay"},"headline":"COVID-19 Face Mask Detection","dateModified":"2020-05-21T00:00:00+05:30","@type":"BlogPosting","datePublished":"2020-05-21T00:00:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/face-mask-detection/"},"description":"COVID-19-Face-Mask-Detection- A deep learning based model that detects whether a person has a face mask on or not with nearly 100% accuracy.","url":"http://localhost:4000/face-mask-detection/","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ashay"},"author":{"@type":"Person","name":"Ashay"},"@type":"BlogPosting","image":"http://localhost:4000/assets/images/face_mask.jpg","headline":"COVID-19 Face Mask Detection","dateModified":"2020-05-21T00:00:00+05:30","datePublished":"2020-05-21T00:00:00+05:30","description":"A deep learning based model that detects whether a person is wearing a face mask or not with nearly 100% accuracy.","url":"http://localhost:4000/face-mask-detection/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/face-mask-detection/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -66,6 +66,18 @@
                 <a class="nav-link px-3 " href="/about/" alt="About">About</a>
               </li>
               
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/projects/" alt="Projects">Projects</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/competitions/" alt="Competitions">Competitions</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/resume/" alt="Resume">Resume</a>
+              </li>
+              
             </ul>
           </div>
 
@@ -98,11 +110,15 @@
                         
                         
                         <li>
-                         <a href="/categories#jekyll">Jekyll</a>
+                         <a href="/categories#deep-learning">Deep Learning</a>
                         </li>
                         
                         <li>
-                         <a href="/categories#tutorial">tutorial</a>
+                         <a href="/categories#image-classification">Image Classification</a>
+                        </li>
+                        
+                        <li>
+                         <a href="/categories#projects">Projects</a>
                         </li>
                         
                     </ul>
@@ -118,10 +134,9 @@
 
 			<!-- Post Content -->
 			<div class="article-post serif-font">
-				<h1 id="covid-19-face-mask-detection-">COVID-19-Face-Mask-Detection-</h1>
-<p>A deep learning based model that detects whether a person has a face mask on or not with nearly 100% accuracy.</p>
+				<p>A deep learning based model that detects whether a person is wearing a face mask or not with nearly 100% accuracy.</p>
 
-<pre><code>Author : Ashay Ajbani
+<pre><code>Framework : Keras
 
 Pretrained model used : MobileNetV2
 
@@ -143,16 +158,21 @@ Validation Accuracy : 100%
 </ul>
 
 <h1 id="overview">Overview</h1>
-<ul>
-  <li>For training refer <i><b>mask_detection.ipynb</b></i></li>
-  <li>For testing on your own image run <i><b>detect_facemask.py</b></i></li>
-</ul>
 
-<p><b> Techniques used to reduce overfitting </b></p>
+<p><b> Techniques used to reduce overfitting :- </b></p>
 <ul>
   <li> Data Augmentation </li>
   <li> BatchNormalization </li>
   <li> Dropout </li>
+  <li> Early Stopping </li>
+</ul>
+
+<p>Click <a href="https://github.com/ashay36/COVID-19-Face-Mask-Detection-">here</a> to checkout the code.</p>
+
+<p><b> To run the code :- </b></p>
+<ul>
+  <li>For training refer <i><b>mask_detection.ipynb</b></i></li>
+  <li>For testing on your own image run <i><b>detect_facemask.py</b></i></li>
 </ul>
 
                 <div class="clearfix"></div>
@@ -182,21 +202,6 @@ Validation Accuracy : 100%
               
             </div>
             <!-- End Prev/Next -->
-            
-            
-             <!-- Author Box -->
-                				
-				<div class="row post-top-meta">
-					<div class="col-md-2">
-						<img class="author-thumb" src="/assets/images/sal.png" alt="Ashay">
-					</div>
-					<div class="col-md-10">
-						<a target="_blank" class="link-dark" href="https://www.wowthemes.net/category/jekyll-themes/">Ashay</a>						
-					</div>
-				</div>				
-                
-            
-            
 
 		</div>
 		<!-- End Post -->       
