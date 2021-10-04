@@ -2,7 +2,7 @@
 layout: post
 title:  "YOLO Object Detection"
 author: Ashay
-categories: [ Jekyll, tutorial ]
+categories: [ Deep Learning, Object Detection, Projects ]
 image: assets/images/yolo.png
 ---
 
@@ -20,10 +20,7 @@ It uses a YOLOv3 model pre-trained on the COCO dataset.
     </li>
 </ul>
 
-The weights can be downloaded from the following link :-
-```
-https://pjreddie.com/media/files/yolov3.weights
-```
+The weights can be downloaded from <a href="https://pjreddie.com/media/files/yolov3.weights">here</a>
 
 #### Input 
 
@@ -34,3 +31,5 @@ https://pjreddie.com/media/files/yolov3.weights
 ![Output](/assets/images/test.jpg)
 
 No. of objects detected - 3 <br>
+
+Click <a href="https://github.com/ashay36/YOLO-Object-Detection-using-OpenCV">here</a> to access the code.

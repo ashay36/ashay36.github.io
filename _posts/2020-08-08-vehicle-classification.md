@@ -2,9 +2,12 @@
 layout: post
 title:  "Emergency Vehicle Classification"
 author: Ashay
-categories: [ Jekyll, tutorial ]
+categories: [ Deep Learning, Image Classification, Competitions ]
 image: assets/images/vehicle.jpg
 ---
+
+The competition was hosted on Analytics Vidhya.
+The task was to classify vehicles into emergency and non-emergency categories.
 
 ```
 Team Name : The Alphas
@@ -12,6 +15,8 @@ Team Name : The Alphas
 Authors : Ashay Ajbani and Pritam Rao
 
 Competition Type : Image Classification
+
+Framework : Keras
 
 Solution Type : Model Ensembling
 
@@ -21,9 +26,6 @@ Pretrained Models Used : VGG16 and NASnet Large
 
 Private Leaderboard Rank : 36/10000
 ```
-
-The competition was hosted on ```https://www.analyticsvidhya.com/```.
-The task was to classify vehicles into emergency and non-emergency categories.
 
 ### Our Approach
 We ensembled 5 models to make final predictions. 
@@ -58,4 +60,4 @@ Techniques used to reduce overfitting :
 <li> After Ensembling (final) : 0.9688 </li>
 </ul>
 
-You can checkout Pritam Rao's github profile at ```https://github.com/pritamrao746/```
+Click <a href="https://github.com/ashay36/Machine-Learning-Competitions-Notebooks/tree/master/Analytics%20Vidhya's%20Computer%20Vision%20Competition">here</a> to access the code

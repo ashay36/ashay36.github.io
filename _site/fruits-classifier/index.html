@@ -25,7 +25,7 @@
 <meta property="twitter:image" content="http://localhost:4000/assets/images/fruits.jpg" />
 <meta property="twitter:title" content="Fruits Classifier" />
 <script type="application/ld+json">
-{"image":"http://localhost:4000/assets/images/fruits.jpg","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ashay"},"author":{"@type":"Person","name":"Ashay"},"headline":"Fruits Classifier","dateModified":"2020-05-16T00:00:00+05:30","@type":"BlogPosting","datePublished":"2020-05-16T00:00:00+05:30","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/fruits-classifier/"},"description":"A classifier that can classify up-to 120 different types of fruits and vegetables with 95% accuracy","url":"http://localhost:4000/fruits-classifier/","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"Ashay"},"author":{"@type":"Person","name":"Ashay"},"@type":"BlogPosting","image":"http://localhost:4000/assets/images/fruits.jpg","headline":"Fruits Classifier","dateModified":"2020-05-16T00:00:00+05:30","datePublished":"2020-05-16T00:00:00+05:30","description":"A classifier that can classify up-to 120 different types of fruits and vegetables with 95% accuracy","url":"http://localhost:4000/fruits-classifier/","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/fruits-classifier/"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -66,6 +66,18 @@
                 <a class="nav-link px-3 " href="/about/" alt="About">About</a>
               </li>
               
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/projects/" alt="Projects">Projects</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/competitions/" alt="Competitions">Competitions</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link px-3 " href="/resume/" alt="Resume">Resume</a>
+              </li>
+              
             </ul>
           </div>
 
@@ -98,11 +110,15 @@
                         
                         
                         <li>
-                         <a href="/categories#jekyll">Jekyll</a>
+                         <a href="/categories#deep-learning">Deep Learning</a>
                         </li>
                         
                         <li>
-                         <a href="/categories#tutorial">tutorial</a>
+                         <a href="/categories#image-classification">Image Classification</a>
+                        </li>
+                        
+                        <li>
+                         <a href="/categories#projects">Projects</a>
                         </li>
                         
                     </ul>
@@ -120,7 +136,7 @@
 			<div class="article-post serif-font">
 				<p>A classifier that can classify up-to 120 different types of fruits and vegetables with 95% accuracy</p>
 
-<pre><code>Author : Ashay Ajbani
+<pre><code>Framework : Keras
 
 Pretrained model used : VGG19
 
@@ -133,7 +149,8 @@ Train accuracy: 97.39%
 Validation accuracy : 95.64%
 </code></pre>
 
-<p>I have used VGG19 model pre-trained on the Imagenet dataset and fine-tuned it.</p>
+<p>I have used VGG19 model pre-trained on the Imagenet dataset and fine-tuned it using Transfer Learning
+technique.</p>
 
 <p>Many different combinations of hyperparameters were experimented of which this model
 proved to be more promising. The notebook also includes the code to unzip the dataset.</p>
@@ -143,10 +160,13 @@ proved to be more promising. The notebook also includes the code to unzip the da
   <li> Data Augmentation </li>
   <li> BatchNormalization </li>
   <li> Dropout </li>
+  <li> Early Stopping </li>
 </ul>
 
-<p>To download the dataset, click on the following link:
-https://www.kaggle.com/moltean/fruits</p>
+<p>Click <a href="https://github.com/ashay36/Fruits-Classifier/blob/master/fruits360_model.ipynb">here</a> to access the code.</p>
+
+<p>Click <a href="https://www.kaggle.com/moltean/fruits">here</a> to download the dataset.</p>
+
 
                 <div class="clearfix"></div>
 			</div>
@@ -171,21 +191,6 @@ https://www.kaggle.com/moltean/fruits</p>
               
             </div>
             <!-- End Prev/Next -->
-            
-            
-             <!-- Author Box -->
-                				
-				<div class="row post-top-meta">
-					<div class="col-md-2">
-						<img class="author-thumb" src="/assets/images/sal.png" alt="Ashay">
-					</div>
-					<div class="col-md-10">
-						<a target="_blank" class="link-dark" href="https://www.wowthemes.net/category/jekyll-themes/">Ashay</a>						
-					</div>
-				</div>				
-                
-            
-            
 
 		</div>
 		<!-- End Post -->       

@@ -2,15 +2,14 @@
 layout: post
 title:  "COVID-19 Face Mask Detection"
 author: Ashay
-categories: [ Jekyll, tutorial ]
+categories: [ Deep Learning, Image Classification, Projects ]
 image: assets/images/face_mask.jpg
 ---
 
-# COVID-19-Face-Mask-Detection-
-A deep learning based model that detects whether a person has a face mask on or not with nearly 100% accuracy.
+A deep learning based model that detects whether a person is wearing a face mask or not with nearly 100% accuracy.
 
 ```
-Author : Ashay Ajbani
+Framework : Keras
 
 Pretrained model used : MobileNetV2
 
@@ -32,14 +31,19 @@ Validation Accuracy : 100%
 </ul> 
 
 # Overview
-<ul>
-  <li>For training refer <i><b>mask_detection.ipynb</b></i></li>
-  <li>For testing on your own image run <i><b>detect_facemask.py</b></i></li>
-</ul> 
 
-<b> Techniques used to reduce overfitting </b>
+<b> Techniques used to reduce overfitting :- </b>
 <ul>
   <li> Data Augmentation </li>
   <li> BatchNormalization </li>
   <li> Dropout </li>
+  <li> Early Stopping </li>
+</ul> 
+
+Click <a href="https://github.com/ashay36/COVID-19-Face-Mask-Detection-">here</a> to checkout the code.
+
+<b> To run the code :- </b>
+<ul>
+  <li>For training refer <i><b>mask_detection.ipynb</b></i></li>
+  <li>For testing on your own image run <i><b>detect_facemask.py</b></i></li>
 </ul> 
